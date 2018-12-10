@@ -4,11 +4,10 @@
     <div class="col-md-12">
       <h1>Contacts Finder</h1>
       <h3>
-        Email's and Number's
+        Email's, Number's and other stuff
       </h3>
     </div>
     <div class="col-md-6">
-
       <h1>Search by name</h1>
       <section class="list-wrap">
         <label for="search-text">Start Searching...</label>
@@ -19,11 +18,10 @@
             <% contacts.forEach(function(contact){ %>
             <div class="col-md-12">
               <li class="in">
-                <a href="/<%= contact._id %>">
+                <a href="/contact/<%= contact._id %>">
                   <%= contact.degree %>
                   <%= contact.name %> - <b>
                     <%= contact.phone %> </b>
-
                 </a>
               </li>
             </div>

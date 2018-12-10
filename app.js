@@ -6,12 +6,13 @@ const favicon = require('serve-favicon');
 const mongoose = require('mongoose');
 const seedDB = require('./seeds.js');
 
+
 const indexRouter = require('./routes/index');
 const dbConfig = require('./config/config.js');
 
 var app = express();
 
-seedDB();
+//seedDB();
 let dev_db_url = 'mongodb://localhost:27017/Contacts';
 let mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB,  { useNewUrlParser: true });
